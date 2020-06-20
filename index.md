@@ -1,37 +1,28 @@
-## Welcome to GitHub Pages
+## TMUX Cheat Sheet
 
-You can use the [editor on GitHub](https://github.com/yashmayya/tmux-cheat-sheet/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+TMUX is a terminal multiplexer. It allows multiple terminal sessions to be accessed simultaneously in a single window. It is useful for running more than one command-line program at the same time.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Panes
 
-### Markdown
+1) Split into vertical: Ctrl-B + %
+2) Split into horizontal: Ctrl-B + "
+3) Switch between panes: Ctrl-B + arrow
+4) Exit a pane: Ctrl-D (or "exit")
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
+### Windows
 
-# Header 1
-## Header 2
-### Header 3
+1) Create new window: Ctrl-B + C
+2) Switch to window: Ctrl-B + number
+3) Rename window: Ctrl-B + ,
+4) Exit window: Ctrl-D (or "exit")
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
+### Sessions
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/yashmayya/tmux-cheat-sheet/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+1) Detach session: Ctrl-B + D
+2) List sessions: tmux ls
+3) Rename session: tmux rename-session -t $target $newname
+4) Re-attach to session: tmux attach -t $target
+5) Create new named session: tmux new -s $name
+6) Delete session: tmux kill-session -t $target

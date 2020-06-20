@@ -2,6 +2,14 @@
 
 TMUX is a terminal multiplexer. It allows multiple terminal sessions to be accessed simultaneously in a single window. It is useful for running more than one command-line program at the same time.
 
+### Installing
+
+1) On debian based machine: sudo apt install tmux
+
+2) On Mac: brew install tmux
+
+
+
 ### Panes
 
 1) Split into vertical: Ctrl-B + %

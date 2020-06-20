@@ -14,11 +14,11 @@ TMUX is a terminal multiplexer. It allows multiple terminal sessions to be acces
 
 1) Split into vertical: **Ctrl-B + %**
 
-2) Split into horizontal: Ctrl-B + "**
+2) Split into horizontal: **Ctrl-B + "**
 
-3) Switch between panes: Ctrl-B + arrow**
+3) Switch between panes: **Ctrl-B + arrow**
 
-4) Exit a pane: Ctrl-D (or "exit")**
+4) Exit a pane: **Ctrl-D (or "exit")**
 
 
 ### Windows
